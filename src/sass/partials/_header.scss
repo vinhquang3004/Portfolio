@@ -1,0 +1,25 @@
+.header{
+    // - nav-bar
+    &__nav{
+    }
+    &__top-nav{
+        @include flex-space-between;
+    }
+    &__nav-list{
+        margin-left: auto;
+    }
+    &__nav-item{
+        padding: 0 20px;
+        a{
+            display: inline-block;
+            padding: 1.7rem;
+            text-transform: uppercase;
+            font: 600 1.4rem/2rem $primary-font;
+            // font-weight: 500;
+            // font-size: 1.4rem;
+            // line-height: 1.6rem;
+        }
+    }
+
+
+}

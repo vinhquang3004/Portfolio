@@ -1,0 +1,14 @@
+header.header
+    .header__nav
+        nav.navbar.navbar-expand-lg.navbar-light
+            .container-fluid.header__top-nav
+                a.header__logo.navbar-brand(href='#')
+                    img(src="./assets/images/logo.png" alt="logo")
+                button.header__navbar-toggle.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarNav.collapse.navbar-collapse
+                    ul.navbar-nav.header__nav-list
+                        each item in header.navItems
+                            li.nav-item.header__nav-item
+                                a.nav-link(href= item.link, class= `${currentPage === item.link ? 'active' : ''}` )= item.title
+
